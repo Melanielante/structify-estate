@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structify Estates</title>
+</head>
+<body>
+    <header>
+        <h1>STRUCTIFY ESTATE</h1>
+        <nav>
+            <button id="all-houses-button">All Houses</button>
+            <button id="favourites-button">Favourites</button>
+        </nav>
+    </header>
+
+    <!-- filtering section -->
+     <section id="filters">
+        <label for="house-filter">Filter by Type:</label>
+        <select id="house-filter">
+            <option value="all">All</option>
+            <option value="Bungalow">Bungalow</option>
+            <option value="Apartment">Apartment</option>
+            <option value="Maisonette">Maisonette</option>
+            <option value="Bedsitter">Bedsitter</option>
+        </select>
+
+
+     </section>
+
+     <!-- houses display -->
+      <main>
+        <section id="houses-container" class="card-grid">
+            <!-- house cards should go here -->
+        </section>
+
+        <!-- section for house details seen on click -->
+         <section id="house-details" class="hidden">
+            
+         </section>
+         <!-- favourite houses viewed when clicked -->
+         <section id="favourites-section" class="hidden">
+            <h2>Your Favourites</h2>
+            <div id="favourites-container" class="card-grid"></div>
+         </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2025 STRUCTIFY by MELANIE</p>
+      </footer>
+    
+</body>
+</html>
