@@ -24,6 +24,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     //rendering cards to the DOM
+    function renderHouses(houseArray) {
+        
+        housesContainer.innerHTML = ""; //to clear 
+        houseArray.forEach(house => {
+            const card = createHouseCard(house);
+            housesContainer.appendChild(card);
+        });
+    }
+
     
 
 })
