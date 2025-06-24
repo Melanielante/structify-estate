@@ -12,6 +12,18 @@ document.addEventListener("DOMContentLoaded", () => {
     let allHouses = [];
     let favouriteHouses = [];
 
-    const BASE_URL = "http://localhost:3000/houses"
+    const BASE_URL = "http://localhost:3000/houses";
+
+    //fetching houses from json-server
+
+    fetch(BASE_URL)
+    .then(response => response.json())
+    .then(data  => {
+        allHouses = data;
+        renderHouses(allHouses);
+    });
+
+    //rendering cards to the DOM
+    
 
 })
