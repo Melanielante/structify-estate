@@ -41,3 +41,43 @@ nav button{
 nav button:hover {
     background-color: #5d97e7;
 }
+
+#hero {
+    height: 600px;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('https://media.istockphoto.com/id/1455374627/photo/single-story-suburban-home-exterior-with-large-driveway.webp?a=1&b=1&s=612x612&w=0&k=20&c=K6aAWNghm4Yp4GpAQXN2rQnRDliZEP5-GbQI02Dc7aw=');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: backgroundSlideshow 15s infinite;
+}
+
+@keyframes backgroundSlideshow {
+    0% {
+        background-image: url('https://media.istockphoto.com/id/1455374627/photo/single-story-suburban-home-exterior-with-large-driveway.webp?a=1&b=1&s=612x612&w=0&k=20&c=K6aAWNghm4Yp4GpAQXN2rQnRDliZEP5-GbQI02Dc7aw=');
+    }
+    20% {
+        background-image: url('https://images.unsplash.com/photo-1534655610770-dd69616f05ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXBhcnRtZW50JTIwYnVpbGRpbmd8ZW58MHx8MHx8fDA%3D');
+    }
+    40% {
+        background-image: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuc2lvbnN8ZW58MHx8MHx8fDA%3D');
+    }
+    60% {
+        background-image: url('https://images.unsplash.com/photo-1505843795480-5cfb3c03f6ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bWFuc2lvbnN8ZW58MHx8MHx8fDA%3Dv');
+    }
+    80% {
+        background-image: url('https://images.unsplash.com/photo-1594484208280-efa00f96fc21?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFwYXJ0bWVudCUyMGJ1aWxkaW5nfGVufDB8fDB8fHww');
+    }
+    100% {
+        background-image: url('https://images.unsplash.com/photo-1654535095187-769ba364ad7a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1bmdhbG93fGVufDB8fDB8fHww');
+    }
+}
+
