@@ -1,0 +1,53 @@
+{
+  "houses": [
+    {
+      "id": 1,
+      "name": "Modern Bungalow",
+      "type": "Bungalow",
+      "description": "This stunning bungalow offers spacious living areas and a peaceful garden, ideal for small families or retirees.",
+      "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800"
+    },
+    {
+      "id": 2,
+      "name": "Skyline Apartment",
+      "type": "Apartment",
+      "description": "Located in the heart of the city, this modern apartment features an open-plan kitchen and beautiful city views.",
+      "image": "https://images.unsplash.com/photo-1594484208280-efa00f96fc21?w=800"
+    },
+    {
+      "id": 3,
+      "name": "Serene Maisonette",
+      "type": "Maisonette",
+      "description": "A stylish maisonette with a private balcony, two levels of luxury, and a secure neighborhood.",
+      "image": "https://images.unsplash.com/photo-1505843795480-5cfb3c03f6ff?w=800"
+    },
+    {
+      "id": 4,
+      "name": "Compact Bedsitter",
+      "type": "Bedsitter",
+      "description": "Affordable and convenient, this bedsitter is perfect for students or single tenants looking for a minimalist setup.",
+      "image": "https://images.unsplash.com/photo-1654535095187-769ba364ad7a?w=800"
+    },
+    {
+      "id": 5,
+      "name": "Luxury Maisonette",
+      "type": "Maisonette",
+      "description": "Designed with elegance, this home features marble floors, a sleek kitchen, and ample natural lighting.",
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800"
+    },
+    {
+      "id": 6,
+      "name": "Garden Apartment",
+      "type": "Apartment",
+      "description": "Nestled in greenery, this apartment offers calm surroundings, high-end finishes, and community amenities.",
+      "image": "https://images.unsplash.com/photo-1534655610770-dd69616f05ff?w=800"
+    },
+    {
+      "id": 7,
+      "name": "Minimalist Bungalow",
+      "type": "Bungalow",
+      "description": "A charming minimalist home with two bedrooms, a modern kitchen, and sleek wood flooring throughout.",
+      "image": "https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?w=800"
+    }
+  ]
+}
