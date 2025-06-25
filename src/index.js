@@ -57,7 +57,18 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
 
-        
+        // saving to favourites
+        createHouseCard.querySelector(".favourite-btn").addEventListener("click", () => {
+            if (!favouriteHouses.includes(house)) {
+                favouriteHouses.push(house);
+                alert("Added to ffavourites!");
+            }
+            else {
+                alert("Already in favourites.");
+            }
+        });
+
+        return card;
     }
 
 })
