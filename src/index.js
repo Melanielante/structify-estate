@@ -87,6 +87,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    
+    //show all houses
+    allHousesBtn.addEventListener("click", () => {
+        favouritesSection.classList.add("hidden");
+        housesContainer.classList.remove("hidden");
+        renderHouses(allHouses);
+    });
 
 })
