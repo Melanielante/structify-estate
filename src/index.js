@@ -71,4 +71,22 @@ document.addEventListener("DOMContentLoaded", () => {
         return card;
     }
 
+    //filtering hhouses by types
+    houseFilter.addEventListener("change", (event) => {
+        const selectedType = event.target.value;
+
+        if (selectedType === "all") {
+            renderHouses(allHouses);
+        }
+        else {
+            const filtered = allHouses.filter(
+                (house) => house.type.toLowerCase() === selectedType.toLowerCase()
+            );
+
+            renderHouses(filtered);
+        }
+    });
+
+    
+
 })
