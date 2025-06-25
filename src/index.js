@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     const housesContainer = document.getElementById("houses-container");
-    const hhouseFilter = document.getElementById("house-filter");
+    const houseFilter = document.getElementById("house-filter");
     const favouritesBtn = document.getElementById("favourites-btn");
     const allHousesBtn = document.getElementById("all-houses-button");
     const favouritesSection = document.getElementById("favourites-section");
@@ -33,6 +33,31 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    
+    //creating house cards
+
+    function createHouseCard(house) {
+        const card = document.createElement("div");
+        card.classList.add("house-card");
+
+        //cards content
+        card.innerHTML = `
+           <img src = "${house.image}" alt = "${house.name}" />
+           <div class = "info">
+              <h3>${house.name}</h3>
+              <p>Type: ${house.type}</p>
+              <p>${house.description.substring(0, 80)}...</p>
+              <button class = "details-btn">View Deetails</button>
+              <button class = "favourite-btn">Save</button>
+            </div>
+
+        `;
+        // details viewing
+        card.querySelector(".details-btn").addEventListener("click", () => {
+            showHouseDetails(house);
+        });
+
+
+        
+    }
 
 })
