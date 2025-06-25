@@ -87,6 +87,20 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+
+    //showing favourite houses
+    favouritesBtn.addEventListener("click", () => {
+        housesContainer.classList.add("hidden");
+        favouritesSection.classList.remove("hidden");
+
+        favouritesContainer.innerHTML = "";
+        favouriteHouses.forEach((house) => {
+            const card = createHouseCard(house);
+            favouritesContainer.appendChild(card);
+        });
+    });
+
+
     //show all houses
     allHousesBtn.addEventListener("click", () => {
         favouritesSection.classList.add("hidden");
