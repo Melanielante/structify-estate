@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let allHouses = [];
     let favouriteHouses = [];
 
-    const BASE_URL = "https://json-server-olgr.onrender.com";
+    const BASE_URL = "https://json-server-olgr.onrender.com/houses";
 
     //fetching houses from json-server
 
