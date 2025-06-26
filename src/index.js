@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let allHouses = [];
     let favouriteHouses = [];
 
-    const BASE_URL = "http://localhost:3000/houses";
+    const BASE_URL = "https://json-server-olgr.onrender.com";
 
     //fetching houses from json-server
 
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
             favouritesContainer.innerHTML = "<p>No favourites yet. Browse to add some!</p>";
             return;
          }
-         
+
     })
 
     //show all houses
