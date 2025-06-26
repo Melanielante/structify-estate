@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const housesContainer = document.getElementById("houses-container");
     const houseFilter = document.getElementById("house-filter");
-    const favouritesBtn = document.getElementById("favourites-btn");
+    const favouritesBtn = document.getElementById("favourites-button");
     const allHousesBtn = document.getElementById("all-houses-button");
     const favouritesSection = document.getElementById("favourites-section");
     const favouritesContainer = document.getElementById("favourites-container");
@@ -58,10 +58,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         // saving to favourites
-        createHouseCard.querySelector(".favourite-btn").addEventListener("click", () => {
+        card.querySelector(".favourite-btn").addEventListener("click", () => {
             if (!favouriteHouses.includes(house)) {
                 favouriteHouses.push(house);
-                alert("Added to ffavourites!");
+                alert("Added to favourites!");
             }
             else {
                 alert("Already in favourites.");
@@ -91,15 +91,16 @@ document.addEventListener("DOMContentLoaded", () => {
     //showing favourite houses
     favouritesBtn.addEventListener("click", () => {
         housesContainer.classList.add("hidden");
-        favouritesSection.classList.remove("hidden");
+        favouritesSection.classList.remove("hiddin");
+        detailsSection.classList.add("hidden");
 
         favouritesContainer.innerHTML = "";
-        favouriteHouses.forEach((house) => {
-            const card = createHouseCard(house);
-            favouritesContainer.appendChild(card);
-        });
-    });
-
+         if (favouriteHouses.length === 0) {
+            favouritesContainer.innerHTML = "<p>No favourites yet. Browse to add some!</p>";
+            return;
+         }
+         
+    })
 
     //show all houses
     allHousesBtn.addEventListener("click", () => {
@@ -108,4 +109,19 @@ document.addEventListener("DOMContentLoaded", () => {
         renderHouses(allHouses);
     });
 
-})
+    //viewing house details
+    function showHouseDetails(house) {
+        detailsSection.classList.remove("hidden");
+        detailsSection.innerHTML = `
+            <h3>${house.name}</h3>
+            <img src="${house.image}" alt="${house.name}" style="width: 100%; max-width: 600px; border-radius: 10px;"/>
+            <p><strong>Type:</strong> ${house.type}</p>
+            <p>${house.description}</p>
+            <button onClick="document.getElementById('house-details').classList.add('hidden')">Close</button>
+        
+        `;
+
+        window.scrollTo({ top: detailsSection.offsetTop, behavior: "smooth"});
+    }
+
+});

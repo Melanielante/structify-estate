@@ -239,9 +239,9 @@ nav button:hover {
     color: #1e3a8a;
     margin-bottom: 1rem;
 }
-.hidden {
+/* .hidden {
     display: none;
-}
+} */
 
 footer{
     text-align: center;
