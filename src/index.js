@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <h3>${house.name}</h3>
               <p>Type: ${house.type}</p>
               <p>${house.description.substring(0, 80)}...</p>
-              <button class = "details-btn">View Deetails</button>
+              <button class = "details-btn">View Details</button>
               <button class = "favourite-btn">Save</button>
             </div>
 
@@ -100,7 +100,25 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
          }
 
-    })
+         favouriteHouses.forEach(house => {
+            const card = document.createElement("div");
+            card.classList.add("house-card");
+            card.innerHTML = `
+               <img src="${house.image}" alt = "${house.name}" />
+               <div class = "info">
+                   <h3>${house.name}</h3>
+                   <p>Type: ${house.type}</p>
+                   <p>${house.description.substring(0, 80)}...</p>
+                   <button class="details-btn">View Details</button>
+               </div>
+            `;
+            card.querySelector(".details-btn").addEventListener("click", () =>{
+                showHouseDetails(house);
+            });
+            favouritesContainer.appendChild(card);
+         });
+
+    });
 
     //show all houses
     allHousesBtn.addEventListener("click", () => {
