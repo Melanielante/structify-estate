@@ -13,7 +13,7 @@ Structify Estate is a modern, one-page real estate web application that allows u
 
 ## 📍 Live Links
 
-- 🔗 **Frontend** (GitHub Pages): [View Structify Estate](https://your-username.github.io/structify-estate)  
+- 🔗 **Frontend** (GitHub Pages): [View Structify Estate](https://melanielante.github.io/structify-estate/)  
 - 🌐 **Backend API** (Render): [JSON Server API](https://json-server-olgr.onrender.com/houses)
 
 >  *The API might take a few seconds to load if it's been idle — Render needs to “wake it up.”*
